@@ -1,0 +1,167 @@
+.header-container {
+    height: 72px;
+    border-bottom: solid 1px #E2E2E2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        width: 122px;
+        height: 40px;
+        margin-left: 14px;
+    }
+
+    .content-section {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    padding: 0 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #323232;
+                        font-size: 15px;
+                        line-height: 18.15px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .profile-section {
+            background: #E1FFA2;
+            width: 440px;
+            height: 100%;
+            border-left: solid 1px #D3EAA4;
+            display: flex;
+            
+            &-wrapper{
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 380px;
+                justify-content: space-evenly;
+            }
+
+            button{
+                width: 168px;
+                height: 40px;
+                border: 0;
+                background-color: #6E8C20;
+                border-radius: 8px;
+                color: #FFF;
+                font-size: 15px;
+                line-height: 14px;
+                font-weight: 500;
+            }
+            .icon-wrap{
+                width: 30px;
+                position: relative;
+                span{
+                    background-color: #D21A00;
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    text-align: center;
+                    border-radius: 25px;
+                    color: #FFF;
+                    position: absolute;
+                    top: -7px;
+                    right: 3px;
+                    font-size: 10px;
+                }
+            }
+            .avatar{
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 30px;
+            }
+            .mobile-menu{
+                display: none;
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header-container{
+        justify-content: space-between;
+        .content-section{
+            margin-left: 0;
+            position: absolute;
+            width: 100%;
+            top: 72px;
+            nav{
+                position: absolute;
+                background: rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                display: none;
+                &.active{
+                    display: block;
+                }
+
+                ul{
+                    background: #FFF;
+                    flex-direction:column;
+                    width: 80%;
+                    height: 100%;
+                    margin-left: auto;
+                    li{
+                        padding: 14px 20px;
+                    }
+                }
+            }
+            .profile-section{
+                width: auto;
+                background: none;
+                border-left:none;
+                height: auto;
+                position: absolute;
+                top: -46px;
+                right: 0;
+                .profile-section-wrapper{
+                    width: auto;
+                    margin: 0 20px 0 0;
+                    button{
+                        display: none;
+                        position: absolute;
+                        top: 268px;
+                        left: 50%;
+                        transform: translateX(42px);
+                    }
+                    .icon-wrap{
+                        margin: 0 14px;
+                    }
+                    .avatar{
+                        display: none;
+                    }
+                    .mobile-menu{
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

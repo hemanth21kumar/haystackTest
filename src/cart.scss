@@ -1,0 +1,366 @@
+.container {
+    max-width: 1344px;
+}
+
+h3 {
+    color: #323232;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 600;
+    padding: 20px 0;
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    border: 0;
+}
+
+.cart-item-wrapper {
+    border-radius: 6px;
+    border: solid 1px #EEE;
+    padding: 20px;
+
+    h4 {
+        color: #323232;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        .cart-image {
+            width: 128px;
+            height: 88px;
+            border-radius: 6px;
+        }
+
+        &:last-child {
+            .cart-detail-col {
+                border: 0;
+            }
+        }
+
+        .cart-detail-col {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            border-bottom: solid 1px #E2E2E2;
+            padding: 0px 0 10px;
+
+            .cart-detail {
+                margin-right: auto;
+                padding: 0 0 0 20px;
+
+                h3 {
+                    color: #323232;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 600;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                span {
+                    color: #6E8C20;
+                    font-size: 18px;
+                    line-height: 31px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #A2A2A2;
+                    font-size: 16px;
+                    line-height: 34px;
+                    font-weight: 500;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .remove-cart {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.cart-address {
+    h4 {
+        color: #323232;
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+    }
+
+    .date-calendar {
+        border-radius: 6px;
+        border: solid 1px #EEE;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .date-context{
+            h5{
+                color: #383838;
+                font-size: 13px;
+                line-height: 22px;
+                font-weight: 600;
+                font-family: "Inter", sans-serif;
+            }
+            span{
+                color: #383838;
+                font-size: 15px;
+                line-height: 22px;
+                font-family: "Inter", sans-serif;
+            }
+        }
+
+        .date-selection{
+            position: relative;
+            .DateRangePicker{
+                position: absolute;
+                right: 0;
+                background-color: #EEE;
+            }
+        }
+    }
+
+    .insurance {
+        margin: 20px 0;
+
+        h4 {
+            color: #323232;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+            padding: 0 0 20px;
+
+            span {
+                color: #D21A00;
+            }
+        }
+
+        .insurance-wrap {
+            display: flex;
+            justify-content: space-between;
+
+            .insurance-wrap-col {
+                flex: 0 0 30.33%;
+                border: solid 1px #E2E2E2;
+                border-radius: 6px;
+                height: 128px;
+                padding: 20px;
+
+                &:hover {
+                    border: solid 1px #6E8C20;
+                    background-color: #E1FFA2;
+                }
+
+                h4 {
+                    color: #323232;
+                    font-size: 15px;
+                    font-family: "Inter", sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    color: #323232;
+                    font-size: 24px;
+                    line-height: 31px;
+                    font-weight: 600;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+        }
+    }
+
+    .address {
+        border-radius: 6px;
+        border: solid 1px #EEE;
+        padding: 20px;
+        margin: 20px 0;
+
+        h4 {
+            color: #323232;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+        }
+
+        .address-selection {
+            display: flex;
+            padding: 10px 0 0;
+
+            .form-check-input:checked {
+                background-color: #6E8C20;
+                border-color: #6E8C20;
+            }
+
+            .address-content {
+                display: flex;
+                align-items: center;
+                border-bottom: solid 1px #E2E2E2;
+
+                p {
+                    color: #323232;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-family: "Inter", sans-serif;
+                }
+
+                button {
+                    color: #323232;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-family: "Inter", sans-serif;
+                    background: #F4F4F4;
+                    border-radius: 6px;
+                    height: 32px;
+                    width: 96px;
+                }
+            }
+        }
+
+        .add {
+            color: #6E8C20;
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 500;
+            font-family: "Inter", sans-serif;
+            padding: 20px 0 0;
+        }
+    }
+
+    .summary {
+        border-radius: 6px;
+        border: solid 1px #EEE;
+        padding: 20px;
+
+        h4 {
+            color: #2A2A2A;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+        }
+
+        .summary-detail {
+            .summary-detail-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 0 10px;
+                font-family: "Inter", sans-serif;
+
+                label {
+                    color: #A2A2A2;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+
+                span {
+                    color: #323232;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .summary-total {
+            color: #2A2A2A;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            border-top: solid 1px #E2E2E2;
+            padding: 10px 0 10px;
+
+            div {
+                display: block;
+            }
+
+            span {
+                color: #6E8C20;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0 0;
+
+            .add {
+                height: 56px;
+                border: solid 1px #E2E2E2;
+                border-radius: 6px;
+                background-color: #FFF;
+                color: #6E8C20;
+                font-size: 15px;
+                line-height: 14px;
+                font-weight: 500;
+                width: 48%;
+            }
+
+            .book {
+                width: 48%;
+                height: 56px;
+                border-radius: 6px;
+                background-color: #6E8C20;
+                color: #FFF;
+                font-size: 15px;
+                line-height: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.note {
+    color: #323232;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 0;
+    font-family: "Inter", sans-serif;
+
+    p {
+        span {
+            color: #D21A00;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .cart-address{
+        .insurance{
+            .insurance-wrap{
+                .insurance-wrap-col{
+                    height: 110px;
+                    padding: 10px;
+                    p{
+                        font-size: 16px
+                    }
+                }
+            }
+        }
+    }
+}
